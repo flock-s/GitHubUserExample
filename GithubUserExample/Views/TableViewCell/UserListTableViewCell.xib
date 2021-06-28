@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="60" id="KGk-i7-Jjw" customClass="UserListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cp-IG-TC9" userLabel="ViewUserDetailInfo">
+                        <rect key="frame" x="65" y="10" width="194" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="434-Cg-PHi" userLabel="LabelUserName">
+                                <rect key="frame" x="0.0" y="0.0" width="194" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hZ2-ta-j6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UA-h0-IJM" userLabel="LabelUserType">
+                                <rect key="frame" x="0.0" y="25" width="194" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="vUx-hX-EkP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="434-Cg-PHi" firstAttribute="top" secondItem="1Cp-IG-TC9" secondAttribute="top" id="6dR-Og-DPE"/>
+                            <constraint firstItem="434-Cg-PHi" firstAttribute="leading" secondItem="1Cp-IG-TC9" secondAttribute="leading" id="Cxm-7M-dIx"/>
+                            <constraint firstItem="5UA-h0-IJM" firstAttribute="leading" secondItem="1Cp-IG-TC9" secondAttribute="leading" id="DBp-Mg-HJm"/>
+                            <constraint firstAttribute="bottom" secondItem="5UA-h0-IJM" secondAttribute="bottom" id="E8c-w9-6ck"/>
+                            <constraint firstAttribute="trailing" secondItem="434-Cg-PHi" secondAttribute="trailing" id="Ikk-2C-kaW"/>
+                            <constraint firstAttribute="height" constant="40" id="lYc-az-vRP"/>
+                            <constraint firstItem="5UA-h0-IJM" firstAttribute="top" secondItem="434-Cg-PHi" secondAttribute="bottom" constant="5" id="saA-ub-pPi"/>
+                            <constraint firstAttribute="trailing" secondItem="5UA-h0-IJM" secondAttribute="trailing" id="xAA-El-pPA"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kHc-c3-qIu" userLabel="ImageViewUserProfilePicture">
+                        <rect key="frame" x="5" y="5.5" width="50" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="D1B-iK-M0Y"/>
+                            <constraint firstAttribute="height" constant="50" id="wcR-br-KtF"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVA-rG-Dxi" userLabel="ButtonEditUser">
+                        <rect key="frame" x="269" y="15" width="30" height="28.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="bu2-d9-orz"/>
+                            <constraint firstAttribute="width" constant="30" id="xse-be-fJl"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="square.and.pencil" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="RVA-rG-Dxi" secondAttribute="trailing" constant="5" id="1js-NV-V5I"/>
+                    <constraint firstItem="RVA-rG-Dxi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="77G-DX-9M0"/>
+                    <constraint firstItem="RVA-rG-Dxi" firstAttribute="leading" secondItem="1Cp-IG-TC9" secondAttribute="trailing" constant="10" id="Rn9-l2-ez4"/>
+                    <constraint firstItem="kHc-c3-qIu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VE8-4e-NVh"/>
+                    <constraint firstItem="1Cp-IG-TC9" firstAttribute="leading" secondItem="kHc-c3-qIu" secondAttribute="trailing" constant="10" id="bn3-be-COS"/>
+                    <constraint firstItem="kHc-c3-qIu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kvA-Yx-VCz"/>
+                    <constraint firstItem="1Cp-IG-TC9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mzh-u6-DJf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btnEditUser" destination="RVA-rG-Dxi" id="rX5-KD-8LC"/>
+                <outlet property="imgViewUserProfilePicture" destination="kHc-c3-qIu" id="cX5-i1-n6n"/>
+                <outlet property="lblUserName" destination="434-Cg-PHi" id="ofE-ij-ebx"/>
+                <outlet property="lblUserType" destination="5UA-h0-IJM" id="ZtP-u4-XMg"/>
+            </connections>
+            <point key="canvasLocation" x="-84.375" y="118.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
